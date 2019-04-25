@@ -1,0 +1,162 @@
+.border {
+  border: 1px solid #000;
+}
+
+/*
+  Body
+*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 30px auto 0 auto;
+}
+
+/* 
+  Rollover Nav
+*/
+
+.rolloverNav {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.rolloverNav ul {
+  padding-left: 0;
+  background-color: #3399ff;
+  color: #fff;
+  float: left;
+  width: 100%;
+  height: 28px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+.rolloverNav ul li {
+  display: inline;
+}
+
+.rolloverNav ul li a {
+  padding: 0.2em 1em;
+  background-color: #3399ff;
+  color: white;
+  text-decoration: none;
+  border-right: 1px solid #fff;
+}
+
+#home {
+  border-left: 1px solid #fff;
+}
+
+.rolloverNav ul li a:hover {
+  background-color: #99ccff;
+  color: #fff;
+}
+
+/* 
+  Images used on second page.
+*/
+
+img {
+  width: 400px;
+}
+
+/*
+  Class Heading used on index page.
+*/
+
+.classHeading {
+  margin-bottom: 50px;
+}
+
+/*
+  Exercise 2 Content
+*/
+
+.video,
+.formArea,
+.seo,
+.validation {
+  margin: 100px 0px 100px 0px;
+}
+
+.validation {
+  width: 70%;
+  margin: 30px auto 0 auto;
+}
+
+.formFields {
+  margin-bottom: 100px;
+}
+
+div.formFields {
+  display: table;
+}
+
+div.formRow {
+  display: table-row;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 15px;
+}
+
+/* 
+  Exercise 3 Content
+*/
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/*
+  Exercise 4 Content
+*/
+
+footer {
+  padding-top: 100px;
+}
+
+header {
+  display: none;
+}
+
+h3 {
+  margin-top: 50px;
+}
