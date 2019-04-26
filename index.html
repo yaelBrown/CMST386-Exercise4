@@ -11,7 +11,7 @@
     <!-- Montserrat Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <!-- LESS CSS preprocessor -->
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./css/exercise4_.css" />
       
     <title>Exercise 4 - Yael Brown</title>
@@ -32,53 +32,73 @@
     <main class="container">
 
       <!-- Breadcrumbs -->
-      <ul class="breadcrumb">
+      <ul class="breadcrumb" id="top">
         <li><a href="http://nova.umuc.edu/~ct386c16/exercise1/index.html">Home</a></li>
         <li><a href="#">Exercise 4</a></li>
       </ul>
 
       <!-- Assignment heading -->
-      <div class="classHeading">
+      <header>
         <h1>Exercise 4</h1>
         <h2>CMST 386</h2>
         <h2>Yael Brown</h2>
-      </div>
+      </header>
 
       <!-- Media Query -->
-        <!-- Add content that changes based on media query -->
+      <h4>Media Query</h4>
+      <p>When page is at phone viewport, you should see a phone picture. When it is tablet size (between phone and computer) you should see a tablet. When the viewport is at the largest setting, you should see a computer.</p>
+      <img src="img/computer.jpg" id="computer" alt="Picture of computer">
+      <img src="img/tablet.png" id="tablet" alt="picture of tablet">
+      <img src="img/phone.jpg" id="phone" alt="picture of phone">
 
-      <!-- Accessibility Questions  -->
-      <h3>Accessibility</h3>
-      <h4>Explain tab order and its importance?</h4>
-      <h4>What is WCAG2 and WAI? Explain beyond the acronyms</h4>
-      <h4>Why use a color contrast analyzer?</h4>
+      
+      <div class="gradientBG">
+        <!-- Accessibility Questions  -->
+        <h3>Accessibility</h3>
+        <h4>Explain tab order and its importance?</h4>
+        <p>Tab order, is the order within online forms, that if you press tab it will cycle through. Typically elements are selected from top to bottom. You can change the order that items are selected using the attribute <code>tabindex = "#"</code> within an elements. The # represents the number in the order you want to cycle through elements starting with 0.</p>
+        <h4>What is WCAG2 and WAI? Explain beyond the acronyms</h4>
+        <p>WCAG2 is Web Content Accessibility Guidelines version 2. It is an recommendation for content to make them more accessible to a wider range of people with disabilities, with accommodations for blindness and low vision, deafness and hearing loss, limited movement, speech disabilities, photosensitivity, and a combination of these.</p>
+        <p>WAI is Web Accessibility Initiative. WAI was created by W3C and it seeks the make the web and software more accessible to disabled populations and the growing elderly population. It accomplishes this through "inclusive design" principals, which include; text alternatives for non-text items, present content multiple ways, ensuring content is easy to see and hear, design content so it appears in predictable ways.</p>
+        <h4>Why use a color contrast analyzer?</h4>
+        <p>An color contrast analyzer (CCA) helps you determine the legibility of text and the contrast of visual elements, such as graphical controls and visual indicators. It's purpose is to simulate color blindness to aid in development of websites and software. It helps developers ensure that fonts and images have a sufficient contrast so the visually impaired can understand the content.</p>
 
-      <!-- Usability -->
-      <h3>Usability</h3>
-      <h4>What is User-centered design?</h4>
-      <h4>What is usability?</h4>
-      <h4>What is the impact on users of increased brand awareness for users?</h4>
+        <!-- Usability -->
+        <h3>Usability</h3>
+        <h4>What is User-centered design?</h4>
+        <p>User-centered design (UCD) is a design process in which designers focus on the users and their needs during the design process.</p>
+        <h4>What is usability?</h4>
+        <p>Usability is the ease and access of a product or website with specified goals with effectiveness, efficiency and satisfaction. </p>
+        <h4>What is the impact on users of increased brand awareness for users?</h4>
+        <p>Brand awareness is the reputation of a company that effects how consumers see them. It's their ability to recognize your brand logo or name and the associations they have with you. Their relationships with brands also drive purchases.</p>
 
-      <!-- SEO -->
-        <!-- add back to top link -->
+        <!-- Google Analytics -->
+        <h3>Google Analytics</h3>
+        <h4>Explain the types of reports available in Google Analytics</h4>
+        <p>There are two main types of reports abilable in Google analytics. There are standard reports, which consist of; Real-Time, Audience, Acquisition, Behavior and Conversions. Then there are Custom reports. Custom reports can be created from scratch with data you gather together.</p>
+        <h4>How can the report information help with understanding user needs?</h4>
+        <p>These reports can give a picture of the analytics of a particular website and determine future development requirements.</p>
+        <h4>What some of the other applications that can be integrated with Google Analytics?</h4>
+          <ul>
+            <li>PII Viewer</li>
+            <li>Real-Time Reporting</li>
+            <li>Da Vinci Tools</li>
+          </ul>
 
-      <!-- Google Analytics -->
-      <h3>Google Analytics</h3>
-      <h4>Explain the types of reports available in Google Analytics</h4>
-      <h4>How can the report information help with understanding user needs?</h4>
-      <h4>What some of the other applications that can be integrated with Google Analytics?</h4>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-
+        <!-- SEO -->
+        <a href="#top">(Smooth) Scroll to top</a>
+        
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+          var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+      </div>
     </main>
                   
     <!-- HTML and CSS Validation Links -->
     <footer class="validation">
-      <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386c16%2Fexercise3%2Findex.html">HTML Validation</a><br>
-      <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct386c16%2Fexercise3%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS</a>
+      <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386c16%2Fexercise4%2Findex.html">HTML Validation</a><br>
+      <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct386c16%2Fexercise4%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS</a>
     </footer>
   </body>
 </html>
